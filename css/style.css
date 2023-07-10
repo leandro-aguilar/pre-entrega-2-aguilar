@@ -34,28 +34,14 @@ header nav .collapse ul li .nav-link{
     font-size: 1.3rem;
     color:whitesmoke;
 }
-header nav .collapse .d-flex{
-    padding: 0.2rem;
-    margin:0.2rem;
-}
+
 h1{
     background-color: #343132;
     text-align: center;
     padding: 0.5rem;
     margin-top: 1.5rem;
 }
-h2{
-    background-color: #343132;
-    text-align: center;
-    padding: 0.5rem;
-    margin-top: 1.5rem;
-}
-h3{
-    background-color: #343132;
-    text-align: center;
-    padding: 0.5rem;
-    margin-top: 1.5rem;
-}
+
 p{
     background-color: #343132;
     text-align: center;
@@ -120,9 +106,36 @@ main .div-video {
     justify-content: center;
    margin:1.5rem;
 }
-h3 ul li{
+main div .ul-dias{
+    background-color: #343132;
+   padding: 0.2rem;
+   width: 100%;
+
+}
+main div .ul-dias li{
+    display: flex;
+    justify-content: center;
    list-style: none;
+   padding: 0.2rem;
+   margin: 0.5rem;
+   width: 100%;
+
 }
 
 /* estilos desktop */
 
+@media screen and (min-width:1024px){
+    header nav .collapse ul li{
+        display: flex;
+        justify-content: center;
+        background-color:#343132;
+        border-radius: 2.5%;
+        padding: 0.1rem;
+        margin: 0.2rem;
+        font-size: 1rem;
+    }
+    header nav .collapse ul li .nav-link{
+        font-size: 1.3rem;
+        color:whitesmoke;
+    }
+}
