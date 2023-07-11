@@ -48,6 +48,9 @@ p{
     padding: 1rem; 
     margin-top: 0.5rem;
 }
+li{
+    list-style: none;
+}
 .div-img{
     display: flex;
    justify-content: center;
@@ -65,25 +68,28 @@ footer .div-pie{
 
 /* estilos de productos */
 
-.main-productos .div-total .div-productos{
-    background-color: #343132;
-    display: flex; 
-    flex-direction: column;
+.contenedor{
+    display: grid;
     justify-content: center;
-    padding: 5rem, 2rem, 5rem, 2rem;
-    margin: 1.5rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 1.5rem;
+    grid-template-columns:1, 25%;
+    grid-template-rows: 4, 30%;
+}
+
+main div img{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.hijos{
+    background-color: #343132;
+    margin: 1rem;
     border-radius: 2.5%;
 }
-.main-productos .div-total .div-productos .ul-li li{
-    text-align: center;
-    list-style: none;
-    padding: 0.2rem;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+.ul-li li{
+    display: grid;
+    justify-content: center;
 }
+
 
 /* estilo de nosotros */
 
@@ -115,7 +121,6 @@ main div .ul-dias{
 main div .ul-dias li{
     display: flex;
     justify-content: center;
-   list-style: none;
    padding: 0.2rem;
    margin: 0.5rem;
    width: 100%;
@@ -126,10 +131,9 @@ main div .ul-dias li{
 
 @media screen and (min-width:1024px){
     header nav .collapse ul li{
-        display: flex;
+        display: grid;
         justify-content: center;
         background-color:#343132;
-        border-radius: 2.5%;
         padding: 0.1rem;
         margin: 0.2rem;
         font-size: 1rem;
@@ -137,5 +141,14 @@ main div .ul-dias li{
     header nav .collapse ul li .nav-link{
         font-size: 1.3rem;
         color:whitesmoke;
+    }
+    /* productos */
+    .contenedor{
+        display: grid;
+        justify-content: center;
+        grid-template-columns:repeat(4, 1fr);
+    
+        padding: 1rem;
+        margin: 5rem;
     }
 }
