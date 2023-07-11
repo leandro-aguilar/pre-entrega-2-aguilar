@@ -73,6 +73,7 @@ footer .div-pie{
     justify-content: center;
     grid-template-columns:1, 25%;
     grid-template-rows: 4, 30%;
+    grid-template-columns:70%;
 }
 
 main div img{
